@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprender JavaScript</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script> <!-- Enlace al archivo JavaScript externo -->
+</head>
+<body>
+    <header>
+        <h1>Aprender JavaScript</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Introducción a JavaScript</h2>
+            <p>JavaScript es un lenguaje de programación que permite agregar interactividad y dinamismo a las páginas web. Es uno de los tres pilares del desarrollo web, junto con HTML y CSS, y se ejecuta en el navegador.</p>
+        </section>
+
+        <section>
+            <h2>Sintaxis Básica de JavaScript</h2>
+            <p>JavaScript utiliza una sintaxis similar a otros lenguajes de programación. Aquí tienes un ejemplo básico:</p>
+            <pre><code>
+// Esto es un comentario en JavaScript
+let nombre = "Juan"; // Declaración de una variable
+console.log(nombre); // Imprime el valor de la variable en la consola
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Variables y Tipos de Datos</h2>
+            <p>JavaScript permite declarar variables usando <code>var</code>, <code>let</code>, o <code>const</code>. Los tipos de datos incluyen:</p>
+            <ul>
+                <li><strong>String</strong>: Texto, por ejemplo <code>"Hola Mundo"</code>.</li>
+                <li><strong>Number</strong>: Números, por ejemplo <code>42</code> o <code>3.14</code>.</li>
+                <li><strong>Boolean</strong>: Valores lógicos, <code>true</code> o <code>false</code>.</li>
+                <li><strong>Array</strong>: Lista de valores, por ejemplo <code>[1, 2, 3]</code>.</li>
+                <li><strong>Object</strong>: Estructura que permite agrupar valores bajo propiedades, por ejemplo <code>{nombre: "Juan", edad: 30}</code>.</li>
+                <li><strong>Undefined</strong>: Representa una variable que ha sido declarada pero no se le ha asignado un valor.</li>
+                <li><strong>Null</strong>: Representa la ausencia intencional de cualquier valor.</li>
+            </ul>
+            <pre><code>
+let edad = 25; // Número
+let esMayorDeEdad = true; // Booleano
+let nombres = ["Ana", "Pedro", "Luis"]; // Array
+let persona = {nombre: "María", edad: 22}; // Objeto
+let direccion; // Undefined
+let cuenta = null; // Null
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Operadores en JavaScript</h2>
+            <p>JavaScript incluye varios operadores para realizar operaciones matemáticas y lógicas:</p>
+            <ul>
+                <li><strong>Aritméticos</strong>: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code> (suma, resta, multiplicación, división, módulo)</li>
+                <li><strong>De comparación</strong>: <code>==</code>, <code>===</code>, <code>!=</code>, <code>!==</code>, <code>&gt;</code>, <code>&lt;</code> (igualdad, identidad, desigualdad, mayor que, menor que)</li>
+                <li><strong>Lógicos</strong>: <code>&&</code> (AND), <code>||</code> (OR), <code>!</code> (NOT)</li>
+                <li><strong>Asignación</strong>: <code>=</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code> (asignación y asignación combinada)</li>
+            </ul>
+            <pre><code>
+let x = 10;
+let y = 5;
+console.log(x + y); // 15
+console.log(x > y); // true
+console.log(x && y < 15); // true
+x += 5; // x ahora es 15
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Estructuras de Control</h2>
+            <p>Las estructuras de control permiten dirigir el flujo de ejecución de tu código. Las más comunes son:</p>
+            <ul>
+                <li><strong>if/else</strong>: Ejecuta un bloque de código si una condición es verdadera.</li>
+                <li><strong>switch</strong>: Selecciona entre múltiples opciones basadas en el valor de una expresión.</li>
+                <li><strong>for</strong>: Repite un bloque de código un número específico de veces.</li>
+                <li><strong>while</strong>: Repite un bloque de código mientras una condición sea verdadera.</li>
+                <li><strong>for...in</strong>: Itera sobre las propiedades enumerables de un objeto.</li>
+                <li><strong>for...of</strong>: Itera sobre los valores de un objeto iterable, como un array.</li>
+            </ul>
+            <pre><code>
+let numero = 10;
+if (numero > 5) {
+    console.log("El número es mayor que 5");
+} else {
+    console.log("El número es 5 o menor");
+}
+
+for (let i = 0; i < 5; i++) {
+    console.log(i); // Imprime números del 0 al 4
+}
+
+let persona = {nombre: "Ana", edad: 30};
+for (let propiedad in persona) {
+    console.log(propiedad); // Imprime "nombre" y "edad"
+}
+
+let arreglo = [10, 20, 30];
+for (let valor of arreglo) {
+    console.log(valor); // Imprime 10, 20, 30
+}
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Funciones en JavaScript</h2>
+            <p>Las funciones permiten encapsular bloques de código para ser reutilizados. Puedes declararlas usando <code>function</code> o como funciones flecha:</p>
+            <ul>
+                <li><strong>Funciones declarativas</strong>: Se declaran utilizando la palabra clave <code>function</code>.</li>
+                <li><strong>Funciones anónimas</strong>: Funciones sin nombre que se asignan a una variable.</li>
+                <li><strong>Funciones flecha</strong>: Sintaxis más concisa para funciones, especialmente útiles en funciones anónimas.</li>
+                <li><strong>Parámetros y argumentos</strong>: Las funciones pueden recibir datos (parámetros) y devolver un valor.</li>
+            </ul>
+            <pre><code>
+function saludar(nombre) {
+    return "Hola " + nombre;
+}
+console.log(saludar("Juan")); // "Hola Juan"
+
+const sumar = (a, b) => {
+    return a + b;
+}
+console.log(sumar(5, 3)); // 8
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>DOM (Document Object Model)</h2>
+            <p>El DOM es una representación estructural del documento HTML que permite a JavaScript interactuar con los elementos de la página:</p>
+            <ul>
+                <li><strong>document.getElementById()</strong>: Selecciona un elemento por su ID.</li>
+                <li><strong>document.querySelector()</strong>: Selecciona el primer elemento que coincida con un selector CSS.</li>
+                <li><strong>element.textContent</strong>: Cambia el texto de un elemento.</li>
+                <li><strong>element.innerHTML</strong>: Cambia el HTML interno de un elemento.</li>
+                <li><strong>element.style</strong>: Cambia el estilo CSS de un elemento.</li>
+                <li><strong>element.classList</strong>: Manipula las clases CSS de un elemento.</li>
+            </ul>
+            <pre><code>
+let titulo = document.getElementById("titulo");
+titulo.textContent = "Nuevo Título";
+titulo.style.color = "blue";
+titulo.classList.add("nuevo-estilo");
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Manejo de Eventos</h2>
+            <p>JavaScript puede responder a eventos como clics, movimientos del ratón, o envíos de formularios:</p>
+            <ul>
+                <li><strong>addEventListener()</strong>: Vincula un evento a un elemento.</li>
+                <li><strong>event.preventDefault()</strong>: Previene el comportamiento predeterminado del evento.</li>
+                <li><strong>event.stopPropagation()</strong>: Evita que un evento se propague a otros elementos.</li>
+                <li><strong>Eventos comunes</strong>: <code>click</code>, <code>submit</code>, <code>mouseover</code>, <code>keyup</code>.</li>
+            </ul>
+            <pre><code>
+let boton = document.getElementById("miBoton");
+boton.addEventListener("click", function(event) {
+    alert("¡Botón clickeado!");
+    event.preventDefault(); // Previene el comportamiento predeterminado
+});
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Ámbito de Variables y Closures</h2>
+            <p>El ámbito determina la accesibilidad de las variables en diferentes partes del código. Existen tres tipos principales:</p>
+            <ul>
+                <li><strong>Ámbito global</strong>: Las variables declaradas fuera de cualquier función tienen ámbito global.</li>
+                <li><strong>Ámbito de función</strong>: Las variables declaradas dentro de una función solo son accesibles dentro de esa función.</li>
+                <li><strong>Ámbito de bloque</strong>: Las variables declaradas con <code>let</code> o <code>const</code> dentro de un bloque ({...}) solo son accesibles dentro de ese bloque.</li>
+            </ul>
+            <p>Los closures son funciones que recuerdan el entorno léxico en el que fueron creadas, lo que permite que una función interna acceda a las variables de la función externa incluso después de que esta haya terminado de ejecutarse.</p>
+            <pre><code>
+function crearContador() {
+    let contador = 0;
+    return function() {
+        contador += 1;
+        return contador;
+    }
+}
+
+const contador1 = crearContador();
+console.log(contador1()); // 1
+console.log(contador1()); // 2
+const contador2 = crearContador();
+console.log(contador2()); // 1
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Promesas y Async/Await</h2>
+            <p>Las promesas y <code>async/await</code> son herramientas en JavaScript para manejar operaciones asíncronas de manera más eficiente:</p>
+            <ul>
+                <li><strong>Promesas</strong>: Representan un valor que puede estar disponible ahora, en el futuro, o nunca.</li>
+                <li><strong>Async/Await</strong>: Permiten escribir código asíncrono de manera más clara y secuencial.</li>
+            </ul>
+            <pre><code>
+// Promesas
+let promesa = new Promise((resolve, reject) => {
+    let exito = true;
+    if (exito) {
+        resolve("La operación fue exitosa");
+    } else {
+        reject("La operación falló");
+    }
+});
+promesa.then(resultado => console.log(resultado))
+       .catch(error => console.log(error));
+
+// Async/Await
+async function obtenerDatos() {
+    try {
+        let respuesta = await fetch("https://api.ejemplo.com/datos");
+        let datos = await respuesta.json();
+        console.log(datos);
+    } catch (error) {
+        console.log("Error:", error);
+    }
+}
+obtenerDatos();
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Ejemplos Prácticos</h2>
+            <p>Aquí se aplican todos los conceptos aprendidos en ejemplos interactivos, como la manipulación del DOM, manejo de eventos, y uso de Promesas:</p>
+            <pre><code>
+<!-- Ejemplo de manipulación del DOM -->
+<button id="cambiarColor">Cambiar Color</button>
+<p id="parrafo">Este es un párrafo.</p>
+
+<script>
+let boton = document.getElementById("cambiarColor");
+let parrafo = document.getElementById("parrafo");
+
+boton.addEventListener("click", function() {
+    parrafo.style.color = "red";
+});
+</script>
+            </code></pre>
+        </section>
+    </main>
+    <footer>
+        <p>Derechos reservados © 2024 Aprende Desarrollo Web</p>
+    </footer>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>

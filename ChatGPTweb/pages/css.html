@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprender CSS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Aprender CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Introducción a CSS</h2>
+            <p>CSS (Cascading Style Sheets) es un lenguaje de diseño que controla la presentación visual de los elementos HTML en una página web. Con CSS, puedes definir colores, fuentes, espaciamientos, y disposiciones en pantalla.</p>
+        </section>
+
+        <section>
+            <h2>Sintaxis de CSS</h2>
+            <p>Una regla CSS está compuesta por un selector y un bloque de declaraciones:</p>
+            <pre>
+                <code>
+                    selector {<br>
+                        propiedad: valor;<br>
+                    }
+                </code>
+            </pre>
+            <p>Por ejemplo:</p>
+            <pre>
+                <code>
+                    p {<br>
+                        color: blue;<br>
+                        font-size: 16px;<br>
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Selectores CSS</h2>
+            <p>Los selectores permiten seleccionar los elementos HTML a los que se aplicarán los estilos. Algunos selectores comunes incluyen:</p>
+            <ul>
+                <li><strong>Selector de etiquetas</strong>: Selecciona todos los elementos de un tipo específico (por ejemplo, <code>p</code> selecciona todos los párrafos).</li>
+                <li><strong>Selector de clases</strong>: Selecciona todos los elementos con una clase específica (por ejemplo, <code>.clase</code>).</li>
+                <li><strong>Selector de ID</strong>: Selecciona un elemento único con un ID específico (por ejemplo, <code>#id</code>).</li>
+                <li><strong>Selectores de atributo</strong>: Seleccionan elementos basados en un atributo y su valor (por ejemplo, <code>input[type="text"]</code>).</li>
+                <li><strong>Selectores de pseudoclase</strong>: Aplican estilos a un estado específico de un elemento, como <code>:hover</code> para cuando el mouse pasa por encima.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Propiedades CSS Comunes y Detalladas</h2>
+            <p>Aquí se detalla cada propiedad CSS común, con sus subpropiedades y ejemplos de uso:</p>
+            <ul>
+                <li><strong>color</strong>: Establece el color del texto.
+                    <ul>
+                        <li>Ejemplo: <code>color: red;</code> (Cambia el color del texto a rojo)</li>
+                    </ul>
+                </li>
+
+                <li><strong>background-color</strong>: Define el color de fondo de un elemento.
+                    <ul>
+                        <li>Ejemplo: <code>background-color: lightblue;</code> (Cambia el fondo a azul claro)</li>
+                    </ul>
+                </li>
+
+                <li><strong>font-size</strong>: Establece el tamaño de la fuente.
+                    <ul>
+                        <li>Ejemplo: <code>font-size: 20px;</code> (Aumenta el tamaño del texto a 20 píxeles)</li>
+                    </ul>
+                </li>
+
+                <li><strong>margin</strong>: Establece el margen alrededor de un elemento.
+                    <ul>
+                        <li>Subpropiedades:
+                            <ul>
+                                <li><code>margin-top</code>: Margen superior</li>
+                                <li><code>margin-right</code>: Margen derecho</li>
+                                <li><code>margin-bottom</code>: Margen inferior</li>
+                                <li><code>margin-left</code>: Margen izquierdo</li>
+                            </ul>
+                        </li>
+                        <li>Ejemplo: <code>margin: 10px;</code> (Aplica un margen de 10 píxeles en todos los lados)</li>
+                        <li>Ejemplo: <code>margin: 10px 20px;</code> (Aplica 10px arriba y abajo, 20px a la derecha e izquierda)</li>
+                    </ul>
+                </li>
+
+                <li><strong>padding</strong>: Define el espacio entre el contenido de un elemento y su borde.
+                    <ul>
+                        <li>Subpropiedades:
+                            <ul>
+                                <li><code>padding-top</code>: Padding superior</li>
+                                <li><code>padding-right</code>: Padding derecho</li>
+                                <li><code>padding-bottom</code>: Padding inferior</li>
+                                <li><code>padding-left</code>: Padding izquierdo</li>
+                            </ul>
+                        </li>
+                        <li>Ejemplo: <code>padding: 15px;</code> (Aplica un padding de 15 píxeles en todos los lados)</li>
+                        <li>Ejemplo: <code>padding: 10px 20px;</code> (Aplica 10px arriba y abajo, 20px a la derecha e izquierda)</li>
+                    </ul>
+                </li>
+
+                <li><strong>border</strong>: Define el borde alrededor de un elemento.
+                    <ul>
+                        <li>Subpropiedades:
+                            <ul>
+                                <li><code>border-width</code>: Ancho del borde</li>
+                                <li><code>border-style</code>: Estilo del borde (solid, dashed, etc.)</li>
+                                <li><code>border-color</code>: Color del borde</li>
+                            </ul>
+                        </li>
+                        <li>Ejemplo: <code>border: 1px solid black;</code> (Aplica un borde de 1px, sólido y negro)</li>
+                        <li>Ejemplo: <code>border: 2px dashed red;</code> (Aplica un borde de 2px, discontinuo y rojo)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Modelo de Caja (Box Model)</h2>
+            <p>El modelo de caja de CSS describe el diseño y la disposición de los elementos en una página web. Cada elemento se representa como una caja que tiene:</p>
+            <ul>
+                <li><strong>Contenido</strong>: El área donde se muestra el contenido (texto, imágenes, etc.).</li>
+                <li><strong>Padding</strong>: El espacio entre el contenido y el borde.</li>
+                <li><strong>Border</strong>: El borde alrededor del padding.</li>
+                <li><strong>Margin</strong>: El espacio entre el borde y otros elementos.</li>
+            </ul>
+            <p>Ejemplo visual:</p>
+            <pre>
+                <code>
+                    .caja {<br>
+                        width: 200px;<br>
+                        height: 100px;<br>
+                        padding: 10px;<br>
+                        border: 5px solid black;<br>
+                        margin: 20px;<br>
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Layout y Flexbox</h2>
+            <p>Flexbox es un modelo de layout en CSS que permite diseñar de manera eficiente distribuciones de elementos. Ejemplo básico:</p>
+            <pre>
+                <code>
+                    .contenedor {<br>
+                        display: flex;<br>
+                        justify-content: space-between;<br>
+                    }<br><br>
+                    .item {<br>
+                        width: 100px;<br>
+                        height: 100px;<br>
+                        background-color: lightblue;<br>
+                    }
+                </code>
+            </pre>
+            <p>Propiedades clave de Flexbox incluyen:</p>
+            <ul>
+                <li><strong>display: flex;</strong> - Activa Flexbox en el contenedor.</li>
+                <li><strong>justify-content</strong> - Controla la alineación de los elementos hijos a lo largo del eje principal (horizontal).</li>
+                <li><strong>align-items</strong> - Controla la alineación de los elementos hijos a lo largo del eje transversal (vertical).</li>
+                <li><strong>flex-direction</strong> - Define la dirección de los elementos hijos (fila, columna).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Media Queries</h2>
+            <p>Las media queries permiten aplicar estilos específicos según el tamaño de la pantalla o el dispositivo. Son fundamentales para diseños responsivos:</p>
+            <pre>
+                <code>
+                    @media (max-width: 600px) {<br>
+                        body {<br>
+                            background-color: lightblue;<br>
+                        }<br>
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Ejemplos Prácticos</h2>
+            <p>Aquí se aplican todos los conceptos aprendidos en ejemplos más complejos, como la creación de un layout responsivo completo.</p>
+            <pre>
+                <code>
+                    /* Ejemplo de layout responsivo */
+                    .contenedor {<br>
+                        display: flex;<br>
+                        flex-wrap: wrap;<br>
+                    }<br><br>
+                    .item {<br>
+                        flex: 1 1 200px;<br>
+                        margin: 10px;<br>
+                        background-color: lightblue;<br>
+                    }<br><br>
+                    @media (max-width: 600px) {<br>
+                        .item {<br>
+                            flex: 1 1 100%;<br>
+                        }<br>
+                    }
+                </code>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>Derechos reservados © 2024 Aprende Desarrollo Web</p>
+    </footer>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprender HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Aprender HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Introducción a HTML</h2>
+            <p>HTML (Lenguaje de Marcado de Hipertexto) es el lenguaje estándar para crear y estructurar documentos web. Es fundamental para todo desarrollador web, ya que permite definir la estructura y el contenido de las páginas web.</p>
+        </section>
+
+        <section>
+            <h2>Estructura Básica de una Página HTML</h2>
+            <p>Una página HTML está compuesta por varias etiquetas que definen su estructura. A continuación, se muestra un ejemplo de la estructura básica de un documento HTML:</p>
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt; <!-- Indica que el documento es de tipo HTML5 -->
+                    &lt;html lang="es"&gt; <!-- El elemento raíz del documento -->
+                        &lt;head&gt; <!-- Contiene metadatos y enlaces a recursos como CSS -->
+                            &lt;meta charset="UTF-8"&gt; <!-- Define la codificación de caracteres -->
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <!-- Asegura que la página sea responsive -->
+                            &lt;title&gt;Título de la página&lt;/title&gt; <!-- Título que aparece en la pestaña del navegador -->
+                            &lt;link rel="stylesheet" href="styles.css"&gt; <!-- Enlace a la hoja de estilos CSS -->
+                        &lt;/head&gt;
+                        &lt;body&gt; <!-- Contenido visible de la página -->
+                            &lt;header&gt; <!-- Encabezado de la página -->
+                                &lt;h1&gt;Encabezado Principal&lt;/h1&gt;
+                            &lt;/header&gt;
+                            &lt;nav&gt; <!-- Barra de navegación -->
+                                &lt;ul&gt; <!-- Lista de elementos de navegación -->
+                                    &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;Sobre nosotros&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/nav&gt;
+                            &lt;main&gt; <!-- Contenido principal -->
+                                &lt;section&gt; <!-- Sección de contenido -->
+                                    &lt;h2&gt;Subtítulo&lt;/h2&gt;
+                                    &lt;p&gt;Este es un párrafo de texto.&lt;/p&gt;
+                                &lt;/section&gt;
+                            &lt;/main&gt;
+                            &lt;footer&gt; <!-- Pie de página -->
+                                &lt;p&gt;Derechos reservados © 2024&lt;/p&gt;
+                            &lt;/footer&gt;
+                        &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Etiquetas HTML Comunes y sus Usos</h2>
+            <p>Estas son algunas de las etiquetas HTML más comunes que encontrarás al desarrollar una página web:</p>
+            <ul>
+                <li><strong>&lt;h1&gt; a &lt;h6&gt;</strong> - Define encabezados de diferentes niveles, desde el más importante (&lt;h1&gt;) hasta el menos importante (&lt;h6&gt;).</li>
+                <li><strong>&lt;p&gt;</strong> - Define un párrafo de texto.</li>
+                <li><strong>&lt;a&gt;</strong> - Define un hiperenlace que puede llevar a otras páginas o secciones.</li>
+                <li><strong>&lt;img&gt;</strong> - Inserta una imagen en la página.</li>
+                <li><strong>&lt;div&gt;</strong> - Contenedor genérico que agrupa otros elementos.</li>
+                <li><strong>&lt;span&gt;</strong> - Contenedor en línea para aplicar estilos a partes de texto o elementos.</li>
+                <li><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</strong> - Listas no ordenadas, ordenadas y elementos de lista.</li>
+                <li><strong>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</strong> - Etiquetas para crear tablas.</li>
+                <li><strong>&lt;form&gt;</strong> - Contenedor para formularios que capturan datos del usuario.</li>
+                <li><strong>&lt;input&gt;</strong> - Campo de entrada de datos en un formulario.</li>
+                <li><strong>&lt;textarea&gt;</strong> - Área de texto para entradas más largas.</li>
+                <li><strong>&lt;button&gt;</strong> - Botón que puede realizar acciones como enviar un formulario.</li>
+                <li><strong>&lt;select&gt;, &lt;option&gt;</strong> - Lista desplegable con opciones seleccionables.</li>
+                <li><strong>&lt;label&gt;</strong> - Etiqueta asociada a un elemento de formulario para mejorar la accesibilidad.</li>
+                <li><strong>&lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;</strong> - Etiquetas semánticas que definen la estructura de una página.</li>
+                <li><strong>&lt;iframe&gt;</strong> - Permite insertar otro documento HTML dentro de la página actual.</li>
+                <li><strong>&lt;script&gt;</strong> - Etiqueta para incluir código JavaScript.</li>
+                <li><strong>&lt;link&gt;</strong> - Conecta recursos externos, como hojas de estilo CSS, con la página.</li>
+                <li><strong>&lt;meta&gt;</strong> - Define metadatos sobre la página HTML, como la codificación de caracteres o la descripción de la página.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ejemplos de Código con Etiquetas Comunes</h2>
+            <p>A continuación se presentan ejemplos prácticos de cómo utilizar las etiquetas HTML mencionadas:</p>
+            <h3>Ejemplo de un enlace (&lt;a&gt;)</h3>
+            <code>
+                &lt;a href="https://www.ejemplo.com"&gt;Visita nuestro sitio&lt;/a&gt;
+            </code>
+
+            <h3>Ejemplo de una imagen (&lt;img&gt;)</h3>
+            <code>
+                &lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;
+            </code>
+
+            <h3>Ejemplo de una lista no ordenada (&lt;ul&gt; y &lt;li&gt;)</h3>
+            <code>
+                &lt;ul&gt;<br>
+                    &lt;li&gt;Elemento 1&lt;/li&gt;<br>
+                    &lt;li&gt;Elemento 2&lt;/li&gt;<br>
+                    &lt;li&gt;Elemento 3&lt;/li&gt;<br>
+                &lt;/ul&gt;
+            </code>
+
+            <h3>Ejemplo de una tabla (&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;)</h3>
+            <code>
+                &lt;table&gt;<br>
+                    &lt;tr&gt;<br>
+                        &lt;th&gt;Encabezado 1&lt;/th&gt;<br>
+                        &lt;th&gt;Encabezado 2&lt;/th&gt;<br>
+                    &lt;/tr&gt;<br>
+                    &lt;tr&gt;<br>
+                        &lt;td&gt;Dato 1&lt;/td&gt;<br>
+                        &lt;td&gt;Dato 2&lt;/td&gt;<br>
+                    &lt;/tr&gt;<br>
+                &lt;/table&gt;
+            </code>
+        </section>
+
+        <section>
+            <h2>Formularios en HTML</h2>
+            <p>Los formularios son esenciales para interactuar con los usuarios y capturar datos. Un formulario básico incluye etiquetas como <strong>&lt;form&gt;</strong>, <strong>&lt;input&gt;</strong>, y <strong>&lt;button&gt;</strong>. Aquí tienes un ejemplo:</p>
+            <code>
+                &lt;form action="submit_form.php" method="post"&gt;<br>
+                    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;<br>
+                    &lt;input type="text" id="nombre" name="nombre"&gt;<br>
+                    &lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+                    &lt;input type="email" id="email" name="email"&gt;<br>
+                    &lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>
+                &lt;/form&gt;
+            </code>
+        </section>
+
+        <section>
+            <h2>Elementos Semánticos en HTML5</h2>
+            <p>HTML5 introdujo varios elementos semánticos que ayudan a estructurar mejor el contenido de la página y a mejorar la accesibilidad:</p>
+            <ul>
+                <li><strong>&lt;header&gt;</strong> - Define un encabezado para un documento o sección.</li>
+                <li><strong>&lt;nav&gt;</strong> - Define una sección de navegación.</li>
+                <li><strong>&lt;section&gt;</strong> - Agrupa contenido relacionado en una sección de la página.</li>
+                <li><strong>&lt;article&gt;</strong> - Contenido independiente que puede ser distribuido o reutilizado.</li>
+                <li><strong>&lt;aside&gt;</strong> - Contenido que está relacionado con el contenido principal, pero que no es parte de él directamente.</li>
+                <li><strong>&lt;footer&gt;</strong> - Define el pie de página para un documento o sección.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Derechos reservados © 2024 Aprende Desarrollo Web</p>
+    </footer>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>

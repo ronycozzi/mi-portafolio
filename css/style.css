@@ -1,0 +1,177 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilo del contenedor principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de las secciones */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.5em;
+    color: #444;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .project {
+        margin-bottom: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+}
+
+
+/* Estilo para la página de contacto */
+section#contact {
+    margin-bottom: 20px;
+}
+
+section#contact h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section#contact p {
+    margin-bottom: 15px;
+}
+
+ul.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+ul.contact-info li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+ul.contact-info li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+ul.contact-info li a:hover {
+    text-decoration: underline;
+}
+
+ul.contact-info li strong {
+    font-weight: bold;
+}
